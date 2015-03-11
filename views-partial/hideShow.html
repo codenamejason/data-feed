@@ -1,0 +1,13 @@
+
+
+<div ng-app="hsapp" ng-controller="ctrl as c">
+	<a ng-click="c.shown = !c.shown" class="btn">{{c.shown ? 'Hide' : 'Show'}} Items</a>
+	<a ng-class="{ show: c.shown, disabled: c.items.length === 0 }" ng-click="c.sub()" class="btn sm minus"></a>
+	<a ng-class="{ show: c.shown, disabled: c.items.length &gt;= 30 }" ng-click="c.add()" class="btn sm plus"></a>
+  <grid ng-class="{ show: c.shown }">
+    <item ng-repeat="item in c.items">{{$index + 1}}</item>
+  </grid>
+</div>
+
+
+

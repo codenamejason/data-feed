@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+ 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="favicon.ico">
+    <title>The Graduate Project</title>
+    <!-- Sign-in panel only -->
+    <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+    <link href="styles/stylesheet.css" rel="stylesheet">
+<!-- load script libraries -->
+<!-- removal of http(s) allows a single script reference to adapt itself to what’s most optimal-->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/0.8.2/angular-material.min.js"></script>
+<script src="//cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+<script src="//cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+<script src="•http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.2/bootstrap.min.js"></script>
+<script src="//cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
+
+<script src="•http://ajax.aspnetcdn.com/ajax/jshint/r07/jshint.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script>
+// Fallback to loading jQuery from a local path if the CDN is unavailable
+(window.jQuery || document.write('<script src="/scr.9.0.min.js"><\/script>'));
+</script>
+<!-- endbuild -->
+
+<body ng-controller="HomeCtrl">
+	
+<div class="container">
+  <div class="jumbotron" style="padding-bottom:10px;">
+		<div style="text-align:center;">
+    <h1>The Graduate</h1>
+			<h2>Feed Your Mind</h2>
+			<p class="big-copy"></p>
+		</div>
+	</div>
+	
+	
+		<h3 style="text-align:center;">Sign In Here</h3>
+    <form class="form-signin" role="form">
+    <input ng-model="user.email" type="email" class="form-control" placeholder="Email address" required="" autofocus="">
+    <input ng-model="user.password" type="password" class="form-control" placeholder="Password" required="">
+    <label class="checkbox">
+      <a href="http://firebase.com/signup/"> Sign Up</a>
+    </label>
+    <button ng-click="SignIn(event)" class="btn" type="submit">Sign in</button>
+    </form>
+  </div>
+	
+</body>
+</html>

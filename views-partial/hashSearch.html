@@ -1,0 +1,20 @@
+<h2>
+  Search Hashtags
+</h2>
+<h6>
+  With the power of AngularJS
+</h6>
+
+<form ng-app="MyApp" ng-controller="TwitterCtrl" ng-submit="initResults()">
+  <span>#</span>
+  <input type="text" ng-model="hashtag" placeholder="Hashtag" spellcheck="false" />
+  <input type="submit" value="Start" />
+  
+  <hr ng-class="progressClass" />
+  
+  <ul id="tweets">
+    <li animate ng-repeat="tweet in tweets">
+      {{tweet.text}}
+    </li>
+  </ul>
+</form>

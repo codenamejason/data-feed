@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+body {
+  font: 300 16px/20px Roboto, Lato, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #303F9F;
+  padding: 52px;
+}
+
+[ng-app] {
+  min-width: 321px;
+  max-width: 749px;
+  padding: 52px;
+}
+
+h1.small {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  text-transform: uppercase;
+  text-indent: 5px;
+  color: #a2cf6e;
+}
+
+h2 {
+  font-size: 45px;
+  line-height: 48px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+p {
+  margin: 2em 0;
+}
+
+.light {
+  font-weight: 100;
+}
+
+.btn {
+  width: 211px;
+  background: #3F51B5;
+  color: #FFFFFF;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  display: block;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+  float: left;
+  height: 52px;
+  line-height: 52px;
+}
+.btn.disabled {
+  background: #C5CAE9;
+  pointer-events: none;
+}
+.btn:hover {
+  background: #5b6bc0;
+}
+.btn.sm {
+  width: 50.5px;
+  background: #FFFFFF;
+  -webkit-transition: 0.35s cubic-bezier(0.55, 0, 0.55, 0.2);
+          transition: 0.35s cubic-bezier(0.55, 0, 0.55, 0.2);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  background: #eee;
+}
+.btn.sm:hover {
+  background: #e5e5e5;
+}
+.btn.sm.show-add:nth-child(3) {
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+.btn.sm.show-remove:nth-child(2) {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+.btn.sm.show {
+  -webkit-transition: 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition: 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.btn.sm.show:nth-child(3) {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+.btn.sm.minus:before, .btn.sm.plus:before {
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background: #3F51B5;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  content: '';
+}
+.btn.sm.plus:after {
+  position: absolute;
+  height: 14px;
+  width: 2px;
+  background: #3F51B5;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  content: '';
+}
+
+grid {
+  *zoom: 1;
+  clear: left;
+  margin: 3px 0;
+  display: block;
+}
+grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+grid item {
+  background: #8BC34A;
+  color: #FFFFFF;
+  width: 104px;
+  height: 104px;
+  display: block;
+  float: left;
+  margin: 0 3px 3px 0;
+  text-align: center;
+  line-height: 104px;
+  font-size: 46px;
+  border-radius: 3px;
+  -webkit-transition: 0.35s cubic-bezier(0.55, 0, 0.55, 0.2);
+          transition: 0.35s cubic-bezier(0.55, 0, 0.55, 0.2);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+grid.show item {
+  -webkit-transition: 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition: 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+grid.show item.ng-enter {
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+grid.show item.ng-enter.ng-enter-active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+grid.show item.ng-leave {
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
+  -webkit-transition: 0.25 cubic-bezier(0.55, 0, 0.55, 0.2);
+          transition: 0.25 cubic-bezier(0.55, 0, 0.55, 0.2);
+}
+grid.show item.ng-leave.ng-leave-active {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}

@@ -1,0 +1,13 @@
+header
+  h1.small Material Design
+  h2 Grid Animation
+div(ng-app='app',
+    ng-controller='ctrl as c')
+  a.btn(ng-click='c.shown = !c.shown') {{c.shown ? 'Hide' : 'Show'}} Items
+  a.btn.sm.minus(ng-class="{ show: c.shown, disabled: c.items.length === 0 }" ng-click='c.sub()')
+  <h1 class="small">Material Design</h1>
+  <h2>Grid Animation</h2>
+  a.btn.sm.plus(ng-class="{ show: c.shown, disabled: c.items.length >= 30 }" ng-click='c.add()')
+  grid(ng-class="{ show: c.shown }")
+    item(ng-repeat='item in c.items') {{$index + 1}}
+ 

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+ 
+<head>
+	<meta name="description" content="An open source news feed built with Firebase">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>The Graduate Data Feed</title>
+    
+    <link href="img/favicon.png" rel="shortcut icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+	<link rel="stylesheet" href="/app/styles/stylesheet.css">
+	<link rel="stylesheet" href="/app/styles/app.css">
+<!-- load script libraries -->
+<!--removal of http(s) allows single script reference to adapt itself to what’s most optimal-->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/0.8.2/angular-material.min.js"></script>
+<script src="//cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+<script src="//cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+<!--<script src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.2/bootstrap.min.js"></script>-->
+<script src="//cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jshint/r07/jshint.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script>
+// Fallback to loading jQuery from a local path if the CDN is unavailable
+(window.jQuery || document.write('<script src="/scripts/jquery-1.9.0.min.js"><\/script>'));
+</script>
+<!-- endbuild -->
+<!-- include route displays -->	
+</head>
+<body ng-view>
+
+			<header id="header">
+      </header>
+
+     <div>
+  <div style="padding:10px 10px 10px 10px;text-align:center;">
+		
+    <h1>The Graduate</h1>
+			<h2>Feed Your Mind</h2>
+		
+	</div>
+		
+  <!-- START Data Feed --> 
+	<script type="ng-template" id="/views-partial/login.html">
+			 Login template
+			 
+	</script>			 
+	<!-- END Feed  -->		 
+			 
+			 
+
+      
+<!--Footer-->
+    <footer id="footer" style="text-align:center;">
+      <ul>
+        
+        <li>Follow <a href="//twitter.com/codenamejason" target="_blank">@CodenameJason</a></li>
+      </ul><h1 class="logo"><img src="images/angular.png" /></h1>
+    </footer>
+
+	
+	
+		<!--
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="./libs/jquery.jeditable.mini.js"></script>
+    <script src="./libs/history.adapter.jquery.js"></script>
+    <script src="./libs/history.js"></script>
+    <script src="./libs/bind-polyfill.js"></script>-->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <!-- Templates by Mustache, Spinner by spin.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.0/mustache.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
+
+    <!-- Firebase.js and auth client must be included before Firefeed -->
+    <script src="https://cdn.firebase.com/js/client/1.1.2/firebase.js"></script>
+
+    <!-- Finally, the Firefeed code -->
+    <script src="js/firefeed-search.js"></script>
+    <script src="js/firefeed.js"></script>
+    <script src="js/firefeed-ui.js"></script>
+
+
+    <!-- Google Analytics Tracking, change this for your website-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXXXX-1', 'firefeed.io');
+      ga('send', 'pageview');
+    </script>
+		
+		
+		<script src="home/home.js"></script>
+	<script src="scripts/hashSearch.js"></script>
+	<script src="/app/scripts/hideShow.js"></script>
+  </body>
+</html>
