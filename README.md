@@ -2,11 +2,11 @@
 
 Data-Feed is a real-time content aggregator built using [Angular](http://www.angularjs.org) and [Firebase](http://www.firebase.com) using no back-end server.
 
-It contains a fully functional client in the app/ directory, and a service that parses RSS data and pushes it into Firebase in the service/ directory.
+It contains a functional client and a service that parses RSS data and pushes it into Firebase. Data is then retreived from Firebase as needed depending on the user and the users settings.
 
 ## Contact
 
-Submit questions or bugs to [codenamejason](http://github.com/codenamejason/data-feed). 
+Submit questions or bugs to [codenamejason data-feed issue tracker](http://github.com/codenamejason/data-feed/issues). 
 
 ## License
 
