@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Firereader
 
@@ -29,3 +30,7 @@ Submit questions or bugs using the [issue tracker](http://github.com/firebase/fi
 ## License
 
 [MIT](http://firebase.mit-license.org/)
+=======
+# data-feed
+Data feed project
+>>>>>>> 273b1ae41df8a67afa840c1a51e9826f3d64c95e
